@@ -19,8 +19,6 @@ result = sm.OLS( y_train, add_constant(X_train) ).fit()
 
 print(result.summary())
 
-
-
 lr = linear_model.LinearRegression()
 lr.fit(X_train, y_train)
 predicted = lr.predict(X_test)
