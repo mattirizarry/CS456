@@ -9,6 +9,60 @@ level of pollutant PM2.5. Specifically, your MLP model needs:
 4. Measure your model performance in terms of MSE (mean squared error) and MAE (mean absolute error).
 5. Assume PM2.5 >= 30 is high (unhealthy). Please define a classifier to predict days that are healthy and unhealthy.
 
+## 0. Development Environment Setup
+
+#### 0.1 Setup Virtual Environment
+
+So we are not installing python packages to our local machines, we can use the `venv` package to create a local environment.
+
+To do so, run the command below
+
+```
+python3 -m venv ~/.virtualenvs/cs456
+```
+
+This creates a new virtual environment at location `~/.virtualenvs/cs456`. To access this virtual environment, run the command below
+
+```
+source ~/.virtualenvs/cs456/bin/activate
+```
+
+If this command does not work, try replacing `source` with `.`. The command will look like this
+
+```
+. ~/.virtualenvs/cs456/bin/activate
+```
+
+#### 0.2 Install Dependencies
+
+Included in this repo is a `requirements.txt` file that will allow you to install all the necessary packages to run the code.
+Install them with the following command
+
+```
+pip install -r requirements.txt
+```
+
+Once this is done, you can start up the project with the command 
+
+```
+python ex2.py
+```
+
+#### 0.2.1 Errors Installing Dependencies
+
+For convenience, here are the packages used in the project.
+
+- `pandas`
+- `numpy`
+- `torch`
+- `scikit-learn`
+
+When you install these, their dependencies will get installed and so on. So if you run the command `pip freeze`, you will see more than these four installed once all is done.
+
+#### 0.3 Conclusion
+
+Once you have reached this point, you should be able to run the project as described in `0.2`. 
+
 ## 1. Two Hidden Layers with ReLU activation functions
 
 To accomplish this, we define a new MLP model with the following code snippet
