@@ -44,6 +44,8 @@ IndexError: too many indices for tensor of dimension 2
 
 So, this is unfortunately all I am able to present for this project. I even took extra days past the due date to see if I could solve this error and I came up with nothing.
 
+So you can see the error and exactly where it was haunting me, I have also migrated everything to a Google Colab notebook and it shows where it went wrong there. You can find that notebook ![here](https://colab.research.google.com/drive/1kddja6Dd24jMtklQRvGa4tshsyZhD1cN?usp=sharing)
+
 ## References
 
 - https://d2l.ai/
